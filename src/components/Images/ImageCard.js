@@ -31,12 +31,11 @@ const imageCard = (props) => {
 
 export default imageCard;
 
-{
-  /* Structure of the image card component
-        name: "",
-        ImageUrl: "",
-        desc: "",
-        author: "",
-        date: ""
-      */
-}
+/* Structure of the image card component
+  name: "",
+  ImageUrl: "",
+  desc: "",
+  author: "",
+  date: ""
+*/
+
