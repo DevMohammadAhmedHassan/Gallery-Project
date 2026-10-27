@@ -5,12 +5,12 @@ const Nav = () => {
   return (
     <div className={styles.nav}>
       <h1>Cool Gallery</h1>
-      <ul >
+      {/* <ul >
         <li>About</li>
         <li>Todo List</li>
         <li>Quote Generator</li>
         <li>Calculate Age</li>
-      </ul>
+      </ul> */}
     </div>
   );
 }

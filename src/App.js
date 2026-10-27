@@ -6,7 +6,7 @@ import imagesData from "./assets/ImagesData";
 
 function App() {
   return (
-    <div>
+    <div className="beach-background">
       <Nav />
       <Header />
       <Images images={imagesData} />
