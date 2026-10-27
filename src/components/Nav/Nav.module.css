@@ -1,39 +1,51 @@
-.nav{
-    /* color:white; */
-    /* background-color:black; */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
-
-    padding:30px 80px;
+  padding: 30px 180px;
 }
-.nav h1{
-    font-size:40px;
-    font-family: 'Courier New', Courier, monospace;
-    cursor:pointer;
-    text-align: center;
-    width: 100%;
+.nav h1 {
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
+  /* text-align: center; */
+  /* width: 100%; */
 }
-.nav ul{
-    display:flex;
-    gap:40px;
-    list-style-type:none;
-    cursor:pointer;
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style-type: none;
+  cursor: pointer;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+.nav ul li:hover {
+  /* cursor:pointer; */
+  color: red;
+  transform: scale(1.1);
+
+  transition: all 0.26s;
 }
 
-.nav ul li:hover{
-    /* cursor:pointer; */
-    color:red;
-    transform:scale(1.1);
-
-    transition:all 0.26s;
+@media all and (max-width: 890px) {
+  .nav {
+    padding: 30px 90px;
+  }
 }
-
-@media all and (max-width: 950px){
-    .nav{
-        flex-direction:column;
-        gap:30px;
-    }
+@media all and (max-width: 680px) {
+  .nav {
+    gap: 5px;
+    padding: 30px 20px;
+  }
+  .nav h1 {
+    font-size: 30px;
+  }
+  .nav ul {
+    gap: 20px;
+  }
 }
