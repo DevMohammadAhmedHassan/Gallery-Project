@@ -12,12 +12,13 @@ const Nav = () => {
           <a
             href="https://www.linkedin.com/in/mohammad-ahmed-hassan-b04a0a291/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <SlSocialLinkedin size={30} />
           </a>
         </li>
         <li>
-          <a href="https://github.com/DevMohammadAhmedHassan" target="_blank">
+          <a href="https://github.com/DevMohammadAhmedHassan" target="_blank" rel="noopener noreferrer">
             <FiGithub size={30} />
           </a>
         </li>
