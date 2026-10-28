@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Cool Gallery 🖼️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple image gallery built with React as my first project after learning the fundamentals of React. It displays a collection of images with their names, descriptions, authors, and dates.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Displays multiple image cards from a separate data file.
+- Shows each image's name, description, author, and date.
+- Uses reusable React components to keep the code organized.
+- Uses React props to pass data between components.
+- Uses CSS and CSS Modules for styling.
+- Includes social links and icons in the navigation bar and footer.
 
-### `npm start`
+## Concepts Practiced
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React setup and project file structure
+- Components and fragments
+- Props and passing data between components
+- Rendering lists with JavaScript's `map()`
+- CSS styling and CSS Modules
+- Using icon libraries such as React Icons and Lucide
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Built With
 
-### `npm test`
+- React
+- JavaScript
+- CSS
+- React Icons
+- Lucide React
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `npm run build`
+```text
+src/
+├── assets/
+│   └── ImagesData.js
+├── components/
+│   ├── Footer/
+│   │   └── Footer.js
+│   ├── Header/
+│   │   └── Header.js
+│   ├── Images/
+│   │   ├── ImageCard.js
+│   │   ├── Images.js
+│   │   └── images.module.css
+│   └── Nav/
+│       ├── Nav.js
+│       └── Nav.module.css
+├── App.js
+├── App.css
+├── index.js
+└── index.css
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How It Works
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The image information is stored as an array of objects in `src/assets/ImagesData.js`. In `App.js`, this data is passed to the `Images` component through props. The `Images` component uses `map()` to render an `ImageCard` for each object, and each card displays the corresponding image and details.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+1. Clone this repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   git clone <repository-url>
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Move into the project directory:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   cd <project-folder>
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Install the dependencies:
 
-## Learn More
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Start the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm start
+   ```
 
-### Code Splitting
+> If this project was created with Vite, use `npm run dev` instead of `npm start`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Learning Journey
 
-### Analyzing the Bundle Size
+This project was built to practise the React fundamentals I had learned and to understand how data can be passed between reusable components to create a dynamic interface.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Still learning, still building 🚀
