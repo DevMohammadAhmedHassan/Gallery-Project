@@ -82,7 +82,7 @@ The image information is stored as an array of objects in `src/assets/ImagesData
    npm start
    ```
 
-> If this project was created with Vite, use `npm run dev` instead of `npm start`.
+
 
 ## Learning Journey
 
